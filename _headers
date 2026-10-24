@@ -1,0 +1,9 @@
+# Netlify et Cloudflare Pages : les fichiers hachés ne changent jamais, le HTML toujours revalidé.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/cv/*
+  Cache-Control: public, max-age=3600
